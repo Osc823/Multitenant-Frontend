@@ -11,9 +11,9 @@ async function cargarDatos(){
          cliente.nombre +
          "</th><td>" +
          cliente.cedula +
-         "</td><th><button onclick='eliminar(" +
+         "</td><th><button type='button' class='btn btn-default btn-main th-btn-border' onclick='eliminar(" +
          cliente.id +
-         ")'>Eliminar</button><a href='modificar.html?id=" +
+         ")'>Eliminar</button><a class='btn btn-default btn-main th-btn-border' href='modificar.html?id=" +
          cliente.id +
          "'>Modificar</a></th></tr>";
 
