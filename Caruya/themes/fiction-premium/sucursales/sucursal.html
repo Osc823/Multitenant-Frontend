@@ -1,39 +1,39 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Fiction Multipage Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sucursales</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- ThemeFisher Icon -->
-  <link rel="stylesheet" href="plugins/themefisher-fonts/themefisher-fonts.css">
-  <!-- Light Box -->
-  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-  <!-- animation css -->
-  <link rel="stylesheet" href="plugins/animate/animate.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+    <!-- ThemeFisher Icon -->
+    <link rel="stylesheet" href="../plugins/themefisher-fonts/themefisher-fonts.css">
+    <!-- Light Box -->
+    <link rel="stylesheet" href="../plugins/magnific-popup/magnific-popup.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="../plugins/animate/animate.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="../plugins/slick/slick.css">
 
-  <!-- Revolution Slider -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="../css/style.css">
 
-  <style>
-    /* Always set the map height explicitly to define the size of the div
+    <style>
+        /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-    #map_canvas {
-      height: 100%;
-    }
+        #map_canvas {
+            height: 100%;
+        }
 
-    /* Optional: Makes the sample page fill the window. */
-  </style>
-  <script src="plugins/modernizr.min.js"></script>
+        /* Optional: Makes the sample page fill the window. */
+    </style>
+    <script src="../plugins/modernizr.min.js"></script>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
 
 
   <section class="page-header services-header" data-parallax="scroll"
-    data-image-src="images/header/blog-folding-img.jpg">
+    data-image-src="../images/header/blog-folding-img.jpg">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -90,18 +90,18 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand logo" href="index.html">
-          <img src="images/logo-yellow.png" alt="">
+          <img src="../images/logo-yellow.png" alt="">
         </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Service</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="sucursal.html">Sucursales</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../services.html">Service</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../sucursal.html">Sucursales</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
@@ -130,8 +130,22 @@
             </div>
 
 
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>ACCIONES</th>
+                  </tr>
+                </thead>
+                <tbody id="datosTabla">
+                </tbody>
+              </table>
+            </div>
+
             <div style="display: flex; justify-content: flex-end;">
-              <a class="btn btn-default btn-main" href="sucursales/sucursal.html" role="button">Sucursales</a>
+              <a class="btn btn-default btn-main" href="sucursalRegistrar.html" role="button">Registrar sucursal</a>
             </div>
 
 
@@ -190,11 +204,11 @@
           <div class="footer-nav text-center">
             <div class="col-md-12">
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
                 <li><a href="#">Our Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -212,28 +226,31 @@
   </footer>
 
 
-  <script src="plugins/jquery.min.js"></script>
+  <script src="../js/clienteJS/clienteService.js"></script>
+  <script src="../js/clienteJS/cliente.js"></script>
 
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="../plugins/jquery.min.js"></script>
+
+  <script src="../plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
-  <script src="plugins/slick/slick.min.js"></script>
+  <script src="../plugins/slick/slick.min.js"></script>
   <!-- filter -->
-  <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+  <script src="../plugins/filterizr/jquery.filterizr.min.js"></script>
   <!-- Lightbox -->
-  <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="../plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
-  <script src="plugins/parallax.min.js"></script>
+  <script src="../plugins/parallax.min.js"></script>
   <!-- Video -->
-  <script src="plugins/jquery.vide.js"></script>
+  <script src="../plugins/jquery.vide.js"></script>
   <!-- google map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-  <script src="plugins/google-map/gmap.js"></script>
+  <script src="../plugins/google-map/gmap.js"></script>
 
-  <script src="js/script.js"></script>
+  <script src="../js/script.js"></script>
 
   <!-- SUCURSAL SCRIPTS -->
-  <script src="js/sucursalService.js"></script>
-  <script src="js/sucursal.js"></script>
+  <script src="../js/sucursalesJS/sucursalService.js"></script>
+  <script src="../js/sucursalesJS/sucursal.js"></script>
 </body>
 
 </html>
