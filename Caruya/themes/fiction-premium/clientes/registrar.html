@@ -110,28 +110,69 @@
 
     <!-- Portfolio Sections 
  =========================-->
-    <section class="portfolio">
+   
+
+    <section class="blog">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-
-                    <form>
-                        <label for="name">Nombre</label>
-                        <input type="text" id="nombre" name="nombre">
-                        <br>
-
-                        <label for="cedula">Cedula</label>
-                        <input type="number" id="cedula" name="cedula">
-                        <br>
-
-                        <button type="button" onclick="registrar()">Registrar</button>
-                    </form>
-
-
+                <div class="title text-center">
+                    <h2>Sucursales</h2>
                 </div>
+                <div class="col-md-12">
+                    <!-- Blog Right Sections 
+          =========================-->
+                    <div class="blog-sidbar">
+
+
+
+                        <div style="display: flex; justify-content: center;">
+                            <a class="btn btn-default btn-main" href="cliente.html" role="button">Regresar</a>
+                        </div>
+
+                        <section class="contact-form">
+                            <div class="container">
+                                <div class="row">
+
+                                    <form>
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input class="form-control" id="nombre" name="nombre" type="text"
+                                                    placeholder="Nombre">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input class="form-control" id="cedula" name="cedula" type="number"
+                                                    placeholder="Cedula">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div style="display: flex; justify-content: flex-end;">
+                                                <div class="contact-btn text-center">
+                                                    <button type="button" class="btn btn-default btn-main"
+                                                        onclick="registrar()">Registrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
+    
 
     <footer class="footer">
         <div class="container">
