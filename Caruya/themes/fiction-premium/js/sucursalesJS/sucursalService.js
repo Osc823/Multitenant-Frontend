@@ -1,41 +1,39 @@
-const API = "http://localhost:8080/api/sucursal";
-
-const HEADERS = {
-  "Content-Type": "application/json",
-  "X-TenantID": "tenant2",
-};
-
 const sucursalService = {
+  API: "http://localhost:8080/api/sucursal",
+  HEADERS: {
+    "Content-Type": "application/json",
+    "X-TenantID": "tenant2",
+  },
   //
   async listar() {
-    const respuesta = await fetch(API + "/listar", {
+    const respuesta = await fetch(this.API + "/listar", {
       method: "GET",
-      headers: HEADERS,
+      headers: this.HEADERS,
     });
     const listaSucursales = await respuesta.json();
     return listaSucursales;
   },
   //
   async buscarPorId(id) {
-    const respuesta = await fetch(API + "/id/" + id, {
+    const respuesta = await fetch(this.API + "/id/" + id, {
       method: "GET",
-      headers: HEADERS,
+      headers: this.HEADERS,
     });
     return await respuesta.json();
   },
   //
   async registrar(sucursal) {
-    const respuesta = await fetch(API + "/registrar", {
+    const respuesta = await fetch(this.API + "/registrar", {
       method: "POST",
-      headers: HEADERS,
+      headers: this.HEADERS,
       body: JSON.stringify(sucursal),
     });
   },
   //
   async modificar(sucursal) {
-    const respuesta = await fetch(API + "/modificar", {
+    const respuesta = await fetch(this.API + "/modificar", {
       method: "PUT",
-      headers: HEADERS,
+      headers: this.HEADERS,
       body: JSON.stringify(sucursal),
     });
   },
@@ -44,9 +42,9 @@ const sucursalService = {
     const sucursal = {
       id: id,
     };
-    const respuesta = await fetch(API + "/eliminar", {
+    const respuesta = await fetch(this.API + "/eliminar", {
       method: "DELETE",
-      headers: HEADERS,
+      headers: this.HEADERS,
       body: JSON.stringify(sucursal),
     });
   },
