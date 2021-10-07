@@ -1,41 +1,40 @@
-const API = "http://localhost:8080/api/proveedor";
-
-const HEADERS = {
-  "Content-Type": "application/json",
-  "X-TenantID": "tenant1",
-};
-
 const proveedorService = {
+  API: "http://localhost:8080/api/proveedor",
+
+  HEADERS: {
+    "Content-Type": "application/json",
+    "X-TenantID": "tenant1",
+  },
   //
   async listar() {
-    const respuesta = await fetch(API + "/listar", {
+    const respuesta = await fetch(this.API + "/listar", {
       method: "GET",
-      headers: HEADERS,
+      headers: this.HEADERS,
     });
     const listaProveedor = await respuesta.json();
     return listaProveedor;
   },
   //
   async buscarPorId(id) {
-    const respuesta = await fetch(API + "/id/" + id, {
+    const respuesta = await fetch(this.API + "/id/" + id, {
       method: "GET",
-      headers: HEADERS,
+      headers: this.HEADERS,
     });
     return await respuesta.json();
   },
   //
   async registrar(proveedor) {
-    const respuesta = await fetch(API + "/registrar", {
+    const respuesta = await fetch(this.API + "/registrar", {
       method: "POST",
-      headers: HEADERS,
+      headers: this.HEADERS,
       body: JSON.stringify(proveedor),
     });
   },
   //
   async modificar(proveedor) {
-    const respuesta = await fetch(API + "/modificar", {
+    const respuesta = await fetch(this.API + "/modificar", {
       method: "PUT",
-      headers: HEADERS,
+      headers: this.HEADERS,
       body: JSON.stringify(proveedor),
     });
   },
@@ -44,9 +43,9 @@ const proveedorService = {
     const proveedor = {
       id: id,
     };
-    const respuesta = await fetch(API + "/eliminar", {
+    const respuesta = await fetch(this.API + "/eliminar", {
       method: "DELETE",
-      headers: HEADERS,
+      headers: this.HEADERS,
       body: JSON.stringify(proveedor),
     });
   },

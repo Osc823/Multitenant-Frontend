@@ -1,5 +1,5 @@
-const productoService = {
-  API: "http://localhost:8080/api/producto",
+const ventasService = {
+  API: "http://localhost:8080/api/venta",
 
   HEADERS: {
     "Content-Type": "application/json",
@@ -11,8 +11,8 @@ const productoService = {
       method: "GET",
       headers: this.HEADERS,
     });
-    const listaProductos = await respuesta.json();
-    return listaProductos;
+    const listaVentas = await respuesta.json();
+    return listaVentas;
   },
   //
   async buscarPorId(id) {
@@ -23,30 +23,30 @@ const productoService = {
     return await respuesta.json();
   },
   //
-  async registrar(producto) {
+  async registrar(venta) {
     const respuesta = await fetch(this.API + "/registrar", {
       method: "POST",
       headers: this.HEADERS,
-      body: JSON.stringify(producto),
+      body: JSON.stringify(venta),
     });
   },
   //
-  async modificar(producto) {
-    const repuesta = await fetch(this.API + "/modificar", {
+  async modificar(venta) {
+    const respuesta = await fetch(this.API + "/modificar", {
       method: "PUT",
       headers: this.HEADERS,
-      body: JSON.stringify(producto),
+      body: JSON.stringify(venta),
     });
   },
   //
   async eliminar(id) {
-    const producto = {
+    const venta = {
       id: id,
     };
     const respuesta = await fetch(this.API + "/eliminar", {
       method: "DELETE",
       headers: this.HEADERS,
-      body: JSON.stringify(producto),
+      body: JSON.stringify(venta),
     });
   },
 };
