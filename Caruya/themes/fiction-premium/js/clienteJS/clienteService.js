@@ -34,7 +34,7 @@ const clienteService ={
     },
     //
     async modificar(cliente){
-        const repuesta = await fetch(API + "/modificar" ,{
+        const respuesta = await fetch(API + "/modificar" ,{
             method: "PUT",
             headers: HEADERS,
             body: JSON.stringify(cliente),
