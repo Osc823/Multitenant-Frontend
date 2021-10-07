@@ -32,7 +32,7 @@ const clienteService = {
   },
   //
   async modificar(cliente) {
-    const repuesta = await fetch(this.API + "/modificar", {
+    const respuesta = await fetch(this.API + "/modificar", {
       method: "PUT",
       headers: this.HEADERS,
       body: JSON.stringify(cliente),
