@@ -13,10 +13,10 @@ async function cargarDatos(){
         producto.precio +
         "</th><td>" +
         producto.cantidad +
-       // "</th><td>" +
-       // proveedor.nombre +
-       //"</th><td>" +
-       // sucursal.nombre +
+        "</th><td>" +
+        producto.proveedor.nombre +
+       "</th><td>" +
+       producto.sucursal.nombre +
         "</td><th><button type='button' class='btn btn-default btn-main th-btn-border' onclick='eliminar(" +
         producto.id +
         ")'>Eliminar</button><a class='btn btn-default btn-main th-btn-border' href='modificar.html?id=" +
